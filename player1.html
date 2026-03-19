@@ -13,9 +13,6 @@
 
     <div class="container">
         <nav class="sidebar">
-
-            <h3><a href="#"></a></h3>
-
             <div class="logo">
                 <a href="./index.html"><img src="icons/favicon.png" alt="icon" width="30px" height="30px"></a>
             </div>
@@ -60,17 +57,41 @@
             </header>
             </div>
 
-            <section class="content">
-                <h2>Artistas Populares</h2>
-                <div class="artists-grid">
+            <div class="main-player">
 
+                <div class="player">
+                    <img id="cover" src="cover.png" alt="Capa do Album">
+                    <h2 id="title">Musica 1</h2>
+                    <h3 id="artist">Artista</h3>
+
+                    <audio id="audio"></audio>
+
+                        <div class="controls">
+                        <button id="prev">⏮</button>
+                        <button id="play">▶</button>
+                        <button id="next">⏭</button>
                 </div>
 
-                <h2>Albuns Populares</h2>
-                <div class="albums-grid">
-                    
+                <div id="progress">
+                    <div id="progress-bar"></div>
                 </div>
-            </section>
+
+                <div class="time">
+                    <span id="current">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+
+                
+            </div>
+
+            
+            <ul class="playlist" id="playlist">
+
+            </ul>
+
+            <div id="beat"></div>
+                
+            </div>
 
         </main>
 
@@ -85,6 +106,6 @@
     </div>
     
 </body>
-<script src="./script.js"></script>
+<script src="./script1.js"></script>
 
 </html>
