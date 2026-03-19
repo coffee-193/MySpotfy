@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #121212;
+    padding: 24px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img {
+    font-size: 24px;
+}
+
+.librari i {
+    color: dimgray;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.librari p {
+    color: dimgray;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.librari {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.playlist, .podcast {
+    background-color: #242424;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.playlist button, .podcast button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 4px 8px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.playlist p, .podcast p {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.footer a {
+    color: darkgrey;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 420px;
+    margin-bottom: 16px;
+}
+
+.language-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    margin: 16px;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.language-button:hover {
+    background-color: #282828;
+}
+
+main {
+    padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.searsh-bar {
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    padding: 4px 8px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.searsh-bar input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding-left: 8px;
+    outline: none;
+}
+
+.artists-grid, .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-top: 14px;
+}
+.content h2 {
+    padding-top: 14px;
+}
+
+.artists-card, .album-card {
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.artists-card:hover , .album-card:hover {
+    background-color: #282828;
+}
+
+.artists-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.album-card img {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.content {
+    margin-top: 24px;
+}
+
+.banner {
+    background: linear-gradient(90deg, #AF2896, #509Bf5);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 14px;
+    align-items: center;
+}
+
+.banner h3 {
+    font-size: 14px;
+}
+
+.banner {
+    font-size: 12px;
+    position: fixed;
+}
+
+.banner button{
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.banner button:hover{
+    background-color: #ddd7d7;
+}
+
+audio {
+    width: 300px;
+    background-color: #121212;
+}
